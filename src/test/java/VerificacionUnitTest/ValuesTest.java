@@ -3,7 +3,6 @@ package VerificacionUnitTest;
 import VerificacionUnitTestMock.Generador;
 import VerificacionUnitTestMock.PrimoUtils;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
@@ -25,9 +24,9 @@ public class ValuesTest {
     @ParameterizedTest
     @CsvSource({
             "1,1",
-            "2,2",
-            "11,2 4 6 8 10",
-            "21,1 3 5 7 9 11 13 15 17 19 21",
+            "2,3 2",
+            "11,3 4 6 8 9 10",
+            "21,3 1 5 7 9 11 13 15 17 19",
             "8,1 3 5 7",
 
     })
